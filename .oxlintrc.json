@@ -1,0 +1,22 @@
+{
+    "$schema": "./node_modules/oxlint/configuration_schema.json",
+    "plugins": ["react", "typescript", "oxc"],
+    "categories": {
+        "correctness": "error",
+        "suspicious": "error"
+    },
+    "rules": {
+        "eqeqeq": "error",
+        "no-alert": "error",
+        "no-var": "error",
+        "no-shadow": "off",
+        "no-underscore-dangle": "off",
+        "typescript/no-explicit-any": "error",
+        "typescript/ban-ts-comment": "error",
+        "typescript/explicit-function-return-type": "error",
+        "typescript/explicit-module-boundary-types": "error",
+        "react/react-in-jsx-scope": "off",
+        "react/rules-of-hooks": "error",
+        "react/only-export-components": ["warn", { "allowConstantExport": true }]
+    }
+}
